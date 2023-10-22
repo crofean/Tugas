@@ -1,3 +1,10 @@
+// Nama		: Fadil Biyan Eka Satria
+// NIM		: 048634082
+// Prodi	: Sistem Informasi
+// UPBJJ	: Semarang
+
+// Sertakan contoh coding lain yang menunjukkan deklarasi array dua dimensi? 
+
 package StrukturData;
 
 class DiskusiDua {
