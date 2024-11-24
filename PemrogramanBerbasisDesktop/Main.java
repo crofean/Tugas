@@ -2,6 +2,10 @@ package PemrogramanBerbasisDesktop;
 
 import java.util.Scanner;
 
+// Tugas 1
+// Fadil Biyan Eka Satria
+// 048634082
+// Sistem Informasi
 public class Main {
     // Daftar menu makanan dan minuman
     static Menu[] menu = new Menu[] {
