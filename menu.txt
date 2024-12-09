@@ -1,0 +1,4 @@
+Nasi Goreng,20000.0,Makanan
+Nasi Padang,15000.0,Makanan
+Es Teh,5000.0,Minuman
+Kopi Susu,5000.0,Diskon

@@ -1,0 +1,11 @@
+
+----- STRUK PEMESANAN -----
+Nasi Goreng - 1 x Rp. 20000.0 = Rp. 20000.0
+Es Teh - 1 x Rp. 5000.0 = Rp. 5000.0
+Kopi Susu - 1 x Rp. 5000.0 = Rp. 4000.0 (Diskon)
+
+Subtotal: Rp. 29000.0
+Pajak (10%): Rp. 2900.0
+Total Diskon: Rp. 1000.0
+Total Bayar: Rp. 31900.0
+----------------------------
