@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fadil Biyan | Biodata Diri</title>
+  </head>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #0f133d;
+      color: #333;
+      margin: 0;
+      padding: 20px;
+    }
+
+    h1 {
+      color: #3f556b;
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 1.6;
+    }
+
+    .biodata {
+      background-color: #4c6f91;
+      padding: 20px;
+      border-radius: 8px;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      color: #ffffff;
+      text-align: center;
+    }
+
+    .text {
+      color: #ffffff;
+      font-size: 20px;
+    }
+
+    .box {
+      background-color: #4c6f91;
+      padding: 32px;
+      border-radius: 8px;
+      margin-bottom: 10px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      color: #ffffff;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      width: 100%;
+    }
+
+    @media (max-width: 600px) {
+      body {
+        padding: 10px;
+      }
+
+      h1 {
+        font-size: 24px;
+      }
+
+      p {
+        font-size: 16px;
+      }
+    }
+  </style>
+  <body>
+    <!-- Nama, NIM, Jenis Kelamin, program Studi, Fakultas.  -->
+    <h1 class="biodata">Biodata Diri</h1>
+
+    <div
+      style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center"
+    >
+      <div class="box">
+        <div
+          style="
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          "
+        >
+          <img
+            src="assets/man.png"
+            style="margin-right: 30px"
+            alt="image"
+            width="100"
+            height="100"
+          />
+          <p class="text"><strong>Fadil Biyan Eka Satria</strong></p>
+        </div>
+      </div>
+
+      <div class="box" style="gap: 30px; justify-content: center">
+        <p class="text">
+          Nomor Induk: <br />
+          048634082
+        </p>
+        <p class="text">Jenis Kelamin: <br />Laki-laki</p>
+        <p class="text">Program Studi: <br />Sistem Informasi</p>
+        <p class="text">Fakultas: <br />Fakultas Sains dan Teknologi</p>
+      </div>
+    </div>
+  </body>
+  <script>
+    // Fungsi untuk menampilkan alert saat halaman dimuat
+    window.onload = function () {
+      alert("Selamat datang di halaman biodata saya!");
+    };
+
+    // Fungsi untuk menampilkan alert saat tombol diklik
+    function showAlert() {
+      alert("Tombol diklik!");
+    }
+  </script>
+</html>
