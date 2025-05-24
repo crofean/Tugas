@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tugas 2</title>
+
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <style>
+      .container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+        font-family: Arial, sans-serif;
+      }
+      body {
+        background-color: #f4f4f4;
+        color: #333;
+      }
+      h1 {
+        color: #333;
+        text-align: center;
+      }
+
+      p {
+        font-size: 1.2em;
+        line-height: 1.5;
+        text-align: center;
+      }
+
+      .box {
+        background-color: #fff;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        margin-bottom: 20px;
+      }
+
+      .card {
+        background-color: darkblue;
+        color: white;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        margin-bottom: 20px;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div id="app" class="box container">
+      <h1>{{ title }}</h1>
+      <hr>
+      <p class="card">{{ description }}</p>
+    </div>
+
+    <script>
+      const { createApp, ref } = Vue;
+
+      createApp({
+        data() {
+          return {
+            title: "Tugas 2 Pemrograman Berbasis Web",
+            description: "Selamat Pagi Tutor, ini adalah tugas kedua saya.",
+          };
+        },
+      }).mount("#app");
+    </script>
+
+    </div>
+  </body>
+</html>
