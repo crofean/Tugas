@@ -1,0 +1,212 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/24.7.17 Chrome/128.0.6613.36 Electron/32.0.1 Safari/537.36" version="24.7.17">
+  <diagram name="BPMN-Prediksi-Bahan-Ajar-UT" id="bpmn-diagram">
+    <mxGraphModel dx="2611" dy="1198" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="900" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" value="Sistem Prediksi Kebutuhan Bahan Ajar Universitas Terbuka" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;fontStyle=1;" parent="1" vertex="1">
+          <mxGeometry x="400" y="20" width="800" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="pool-akademik" value="Bagian Akademik" style="swimlane;html=1;childLayout=stackLayout;resizeParent=1;resizeParentMax=0;horizontal=0;startSize=20;horizontalStack=0;" parent="1" vertex="1">
+          <mxGeometry x="50" y="80" width="1500" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="start-event" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#d5e8d4;strokeColor=#82b366;" parent="pool-akademik" vertex="1">
+          <mxGeometry x="40" y="45" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="task-identifikasi" value="Identifikasi&#xa;Kebutuhan Semester" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="pool-akademik" vertex="1">
+          <mxGeometry x="120" y="35" width="120" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="task-kirim-data" value="Kirim Data&#xa;ke Sistem Prediksi" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="pool-akademik" vertex="1">
+          <mxGeometry x="290" y="35" width="120" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="task-terima-laporan" value="Terima Laporan&#xa;Prediksi" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="pool-akademik" vertex="1">
+          <mxGeometry x="1300" y="35" width="120" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="end-event" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#f8cecc;strokeColor=#b85450;strokeWidth=3;" parent="pool-akademik" vertex="1">
+          <mxGeometry x="1450" y="45" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="pool-sistem" value="Sistem Prediksi" style="swimlane;html=1;childLayout=stackLayout;resizeParent=1;resizeParentMax=0;horizontal=0;startSize=20;horizontalStack=0;" parent="1" vertex="1">
+          <mxGeometry x="50" y="200" width="1500" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="task-terima-data" value="Terima Data&#xa;Historis" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="pool-sistem" vertex="1">
+          <mxGeometry x="60" y="35" width="100" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="gateway-data" value="Cukup&#xa;Data?" style="rhombus;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" parent="pool-sistem" vertex="1">
+          <mxGeometry x="220" y="35" width="80" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="task-algoritma" value="Jalankan Algoritma&#xa;Prediksi" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="pool-sistem" vertex="1">
+          <mxGeometry x="360" y="35" width="120" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="gateway-akurasi" value="Akurasi&#xa;Baik?" style="rhombus;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" parent="pool-sistem" vertex="1">
+          <mxGeometry x="540" y="35" width="80" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="task-laporan" value="Generate&#xa;Laporan Prediksi" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="pool-sistem" vertex="1">
+          <mxGeometry x="680" y="35" width="120" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="pool-teknis" value="Tim Teknis" style="swimlane;html=1;childLayout=stackLayout;resizeParent=1;resizeParentMax=0;horizontal=0;startSize=20;horizontalStack=0;" parent="1" vertex="1">
+          <mxGeometry x="50" y="320" width="1500" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="task-kumpul-data" value="Kumpulkan Data&#xa;Tambahan" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="pool-teknis" vertex="1">
+          <mxGeometry x="200" y="35" width="120" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="gateway-valid" value="Data&#xa;Valid?" style="rhombus;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" parent="pool-teknis" vertex="1">
+          <mxGeometry x="380" y="35" width="80" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="pool-developer" value="Developer" style="swimlane;html=1;childLayout=stackLayout;resizeParent=1;resizeParentMax=0;horizontal=0;startSize=20;horizontalStack=0;" parent="1" vertex="1">
+          <mxGeometry x="50" y="440" width="1500" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="task-update" value="Update&#xa;Parameter Model" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="pool-developer" vertex="1">
+          <mxGeometry x="520" y="35" width="120" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="task-testing" value="Lakukan&#xa;Testing Ulang" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="pool-developer" vertex="1">
+          <mxGeometry x="680" y="35" width="120" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="pool-database" value="Database" style="swimlane;html=1;childLayout=stackLayout;resizeParent=1;resizeParentMax=0;horizontal=0;startSize=20;horizontalStack=0;" parent="1" vertex="1">
+          <mxGeometry x="50" y="560" width="1500" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="data-historis" value="Data Historis&#xa;Mahasiswa" style="shape=datastore;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" parent="pool-database" vertex="1">
+          <mxGeometry x="100" y="35" width="100" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="data-bahan" value="Data Bahan Ajar&#xa;&amp; Inventory" style="shape=datastore;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" parent="pool-database" vertex="1">
+          <mxGeometry x="370" y="35" width="100" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="data-hasil" value="Hasil Prediksi&#xa;&amp; Laporan" style="shape=datastore;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" parent="pool-database" vertex="1">
+          <mxGeometry x="690" y="35" width="100" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="flow1" value="" style="endArrow=classic;html=1;rounded=0;" parent="1" source="start-event" target="task-identifikasi" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="500" y="300" as="sourcePoint" />
+            <mxPoint x="550" y="250" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="flow2" value="" style="endArrow=classic;html=1;rounded=0;" parent="1" source="task-identifikasi" target="task-kirim-data" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="500" y="300" as="sourcePoint" />
+            <mxPoint x="550" y="250" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="flow3" value="" style="endArrow=classic;html=1;rounded=0;" parent="1" source="task-kirim-data" target="task-terima-data" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="350" y="180" as="sourcePoint" />
+            <mxPoint x="130" y="235" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="400" y="220" />
+              <mxPoint x="160" y="220" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="flow4" value="" style="endArrow=classic;html=1;rounded=0;" parent="1" source="task-terima-data" target="gateway-data" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="500" y="300" as="sourcePoint" />
+            <mxPoint x="550" y="250" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="flow5" value="Ya" style="endArrow=classic;html=1;rounded=0;" parent="1" source="gateway-data" target="task-algoritma" edge="1">
+          <mxGeometry x="0.2" width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="500" y="300" as="sourcePoint" />
+            <mxPoint x="550" y="250" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="flow6" value="" style="endArrow=classic;html=1;rounded=0;" parent="1" source="task-algoritma" target="gateway-akurasi" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="500" y="300" as="sourcePoint" />
+            <mxPoint x="550" y="250" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="flow7" value="Ya" style="endArrow=classic;html=1;rounded=0;" parent="1" source="gateway-akurasi" target="task-laporan" edge="1">
+          <mxGeometry x="0.2" width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="500" y="300" as="sourcePoint" />
+            <mxPoint x="550" y="250" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="flow8" value="Tidak" style="endArrow=classic;html=1;rounded=0;" parent="1" source="gateway-data" target="task-kumpul-data" edge="1">
+          <mxGeometry x="0.2" width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="300" y="285" as="sourcePoint" />
+            <mxPoint x="260" y="355" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="flow9" value="" style="endArrow=classic;html=1;rounded=0;" parent="1" source="task-kumpul-data" target="gateway-valid" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="500" y="400" as="sourcePoint" />
+            <mxPoint x="550" y="350" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="flow10" value="Ya" style="endArrow=classic;html=1;rounded=0;" parent="1" source="gateway-valid" target="gateway-data" edge="1">
+          <mxGeometry x="0.2" width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="420" y="355" as="sourcePoint" />
+            <mxPoint x="300" y="285" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="flow11" value="Tidak" style="endArrow=classic;html=1;rounded=0;" parent="1" source="gateway-akurasi" target="task-update" edge="1">
+          <mxGeometry x="0.2" width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="580" y="285" as="sourcePoint" />
+            <mxPoint x="580" y="475" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="flow12" value="" style="endArrow=classic;html=1;rounded=0;" parent="1" source="task-update" target="task-testing" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="500" y="500" as="sourcePoint" />
+            <mxPoint x="550" y="450" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="flow13" value="" style="endArrow=classic;html=1;rounded=0;" parent="1" source="task-testing" target="gateway-akurasi" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="740" y="475" as="sourcePoint" />
+            <mxPoint x="580" y="285" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="790" y="370" />
+              <mxPoint x="690" y="370" />
+              <mxPoint x="690" y="260" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="flow14" value="" style="endArrow=classic;html=1;rounded=0;" parent="1" source="task-laporan" target="task-terima-laporan" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="800" y="235" as="sourcePoint" />
+            <mxPoint x="1360" y="135" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="790" y="140" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="flow15" value="" style="endArrow=classic;html=1;rounded=0;" parent="1" source="task-terima-laporan" target="end-event" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="500" y="300" as="sourcePoint" />
+            <mxPoint x="550" y="250" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="dataflow1" value="" style="endArrow=classic;html=1;rounded=0;dashed=1;dashPattern=5 5;" parent="1" source="task-terima-data" target="data-historis" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="130" y="285" as="sourcePoint" />
+            <mxPoint x="150" y="595" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="160" y="510" />
+              <mxPoint x="200" y="510" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="dataflow2" value="" style="endArrow=classic;html=1;rounded=0;dashed=1;dashPattern=5 5;" parent="1" source="task-algoritma" target="data-bahan" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="420" y="285" as="sourcePoint" />
+            <mxPoint x="420" y="595" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="dataflow3" value="" style="endArrow=classic;html=1;rounded=0;dashed=1;dashPattern=5 5;" parent="1" source="task-laporan" target="data-hasil" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="740" y="285" as="sourcePoint" />
+            <mxPoint x="740" y="595" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="960" y="260" />
+              <mxPoint x="960" y="620" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
