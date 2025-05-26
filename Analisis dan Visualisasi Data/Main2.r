@@ -1,5 +1,7 @@
 # Instal paket berikut jika belum terinstal, lalu load paket 
 # menggunakan fungsi library().
+chooseCRANmirror()
+
 install.packages("ggplot2")
 install.packages("dplyr")
 install.packages("broom")
@@ -9,9 +11,9 @@ library(dplyr)
 library(broom)
 library(ggpubr)
 
-pendapatan <- read.csv("pendapatan.csv")
+pendapatan <- read.csv("data_pendapatan.csv")
 
-# Lakukan regresi linear sederhana dengan mengiktui langkahlangkah berikut.
+# Lakukan regresi linear sederhana dengan mengiktui langkah langkah berikut.
 # a. Gunakan (plot) histogram untuk cek apakah variabel terikat
 # berdistribusi normal atau tidak. Jelaskan interpretasi histogram 
 # tersebut!
@@ -61,7 +63,7 @@ ggqqplot(model$residuals) +
 # cek apakah residual terdistribusi normal. Interpretasikan
 # hasil plot tersebut!
 
-# Visualisasikan hasil regresi menggunakan grafik dengan 
+# . Visualisasikan hasil regresi menggunakan grafik dengan 
 # langkah-langkah berikut:
 # 1. Plot data points pada grafik (10 poin)
 # 2. Tambahkan garis regresi linear pada data yang sudah diplot
@@ -70,9 +72,26 @@ ggqqplot(model$residuals) +
 # 4. Beri judul dan label yang sesuai untuk sumbu x dan y (10 
 # poin)
 
-ggplot(pendapatan, aes(x = pendapatan, y = pendapatan)) +
+# Plot tiitk data
+ggplot(data, aes(x = pendidikan, y = pendapatan)) +
+  geom_point(color = "blue")
+
+# Garis regresi linear
+ggplot(data, aes(x = pendidikan, y = pendapatan)) +
   geom_point(color = "blue") +
-  geom_smooth(method = "lm", color = "red", se = FALSE) +
-  stat_regline_equation(label.x = 3, label.y = 10000) +
-  labs(title = "Regresi Linear Pendapatan", x = "Pendapatan", y = "Pendapatan") +
-  theme_minimal()
+  geom_smooth(method = "lm", color = "red")
+
+# Persamaan regresi linear
+ggplot(data, aes(x = pendidikan, y = pendapatan)) +
+  geom_point(color = "blue") +
+  geom_smooth(method = "lm", color = "red") +
+  stat_regline_equation(label.y = max(data$pendapatan) * 0.9)
+
+# Judul dan label sumbu
+ggplot(data, aes(x = pendidikan, y = pendapatan)) +
+  geom_point(color = "blue") +
+  geom_smooth(method = "lm", color = "red") +
+  stat_regline_equation(label.y = max(data$pendapatan) * 0.9) +
+  labs(title = "Regresi Linear Pendapatan vs Pendidikan",
+       x = "Pendidikan",
+       y = "Pendapatan")
