@@ -1,11 +1,11 @@
 # Instal paket berikut jika belum terinstal, lalu load paket 
 # menggunakan fungsi library().
-chooseCRANmirror()
+# chooseCRANmirror()
 
-install.packages("ggplot2")
-install.packages("dplyr")
-install.packages("broom")
-install.packages("ggpubr")
+# install.packages("ggplot2")
+# install.packages("dplyr")
+# install.packages("broom")
+# install.packages("ggpubr")
 library(ggplot2)
 library(dplyr)
 library(broom)
