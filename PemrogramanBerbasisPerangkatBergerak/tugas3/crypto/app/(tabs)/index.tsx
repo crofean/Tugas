@@ -43,7 +43,7 @@ export default function HomeScreen() {
     >
       {/* use table for list data crypto */}
       <ThemedView style={{ padding: 16 }}>
-        <ThemedText variant="titleLarge" style={{ marginBottom: 16 }}>
+        <ThemedText style={{ marginBottom: 16 }}>
           Cryptocurrency Prices
         </ThemedText>
 
